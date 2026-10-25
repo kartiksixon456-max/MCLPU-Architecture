@@ -1,0 +1,268 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2908
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 AppleSymbols;
+\f3\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww40760\viewh25700\viewkind0
+\deftab720
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+The Matchup: Real-World Giant vs. MCLPU Architecture\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1297\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3956\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3685\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth6380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\fs24 \cf0 Architecture Metric\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 NVIDIA Blackwell B200 (The Current King)\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 MCLPU-100 (3D Volumetric Blueprint)\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 The Winner & Why\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1297\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3956\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3685\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth6380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Physical Geometry
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 2.5D Dual-Die Flat Pack
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Two flat silicon dies glued side-by-side on a silicon interposer with external memory stacks.\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 Monolithic 100-Tier 3D Cube
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 100 alternating active tiers grown vertically on top of each other into a solid cubic block.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 MCLPU wins by density.
+\f1\b0  Flat chips run out of physical space; stacking 100 tiers shrinks the entire system volume into a fraction of a cubic centimeter.\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1297\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3956\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3685\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth6380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 Memory Bandwidth
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 8.0\'a0TB/s (HBM3e)
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Data must travel across microscopic solder bumps and copper wires between the chip and external memory stacks.\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 \uc0\u8776 62,500,000\'a0TB/s(62.5\'a0Petabytes/s)
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Over 250\'a0billion vertical nanoscale vias streaming data across all 100 tiers simultaneously.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 MCLPU wins by \uc0\u8776 7,800,000\'d7.
+\f1\b0  In B200, memory is still a neighbor down the street. In MCLPU, memory lives directly on the transistor's ceiling and floor.\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1297\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3956\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3685\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth6380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 Memory Latency & Distance
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 \uc0\u8776 50\'a0to\'a0100\'a0nanoseconds
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Data travels several millimeters across interposers and caches before reaching a core.\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 Sub-femtoseconds(<10\uc0\u8722 15\'a0s)
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Data travels less than 20\'a0nanometers vertically through a dedicated via.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 MCLPU wins by 1,000,000\'d7.
+\f1\b0  Memory latency is practically zero because there is no external memory bus to cross.\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1297\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3956\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3685\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth6380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 Energy Efficiency (Per Bit Moved)
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 \uc0\u8776 2.0\'a0to\'a04.0\'a0picojoules\'a0(pJ)
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Over 60\'a0to\'a070% of a modern AI chip's electricity is wasted just pushing electrons across copper traces.\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 \uc0\u8776 50\'a0to\'a0100\'a0attojoules\'a0(aJ)
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Nanoscale transit eliminates line capacitance and resistance losses almost completely.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 MCLPU wins by \uc0\u8776 40,000\'d7.
+\f1\b0  Running a trillion-parameter AI model wouldn't require a dedicated electrical substation.\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1297\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3956\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3685\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth6380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 Peak AI Compute Throughput
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 \uc0\u8776 20\'a0PFLOPs (FP4)
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Using specialized Tensor Cores with digital arithmetic ALUs.\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 \uc0\u8776 500\'a0ExaFLOPsequivalent
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Analog in-memory crossbar arrays solving math instantly via Kirchhoff's Current Law.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 MCLPU wins by 25,000\'d7.
+\f1\b0  Instead of calculating equations sequentially core-by-core, the physical physics of the circuit resolves the entire matrix equation at once.\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1297\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth3956\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3685\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth6380\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 Thermal Dissipation
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 Copper Vapor Chambers + Fans / Liquid
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Dissipates around 1,000\'a0W\'a0to\'a01,200\'a0W over a massive flat surface area before hitting thermal throttling (100
+\f2 \uc0\u8728 
+\f1 C).\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 Synthetic Diamond Interlayers + VACNTs
+\f1\b0 \
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Diamond sheets (2,000\'a0W/m
+\f2 \uc0\u8901 
+\f1 K) route heat sideways into an outer CVD diamond perimeter jacket.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 MCLPU wins by material physics.
+\f1\b0  Copper maxes out at \uc0\u8776 400\'a0W/m
+\f2 \uc0\u8901 
+\f1 K. Diamond moves heat 5\'d7 faster than copper and 15\'d7 faster than silicon, while insulating electricity to prevent shorts.\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 In Plain Words: Why MCLPU Dominates\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\fs24 \cf0 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+The "Memory Wall" is Vaporized:
+\f1\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa240\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+In the fastest GPUs today, processors spend up to 
+\f0\b 80% of their time sitting idle waiting for memory
+\f1\b0  to deliver numbers.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+MCLPU eliminates waiting completely. Because memory and logic are married 1-to-1 at every single transistor, there is no line, no traffic, and no bus.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+From Digital Calculation to Natural Physics:
+\f1\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa240\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+Modern supercomputer chips calculate AI math by toggling billions of digital 1s and 0s through millions of clock cycles.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+MCLPU uses 
+\f0\b analog in-memory physics
+\f1\b0 : you feed a voltage in, the memory cells act as resistors, and Ohm's/Kirchhoff's law spits the final answer out instantly on the other side.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+True Volumetric Scaling:
+\f1\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa240\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+Traditional chipmakers are forced to make processors as flat, massive "monsters" (nearly the size of a credit card) because stacking layers would trap heat and melt the chip.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+By using 
+\f0\b synthetic diamond as the internal structural glue
+\f1\b0 , MCLPU can stack 100 stories high without baking itself alive.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 It\'92s the difference between a sprawling 100-house suburban neighborhood connected by crowded two-lane highways (traditional GPU clusters) versus a unified 100-story vertical skyscraper where every bedroom has its own private elevator (MCLPU).}
