@@ -1,0 +1,58 @@
+# =============================================================================
+# Workflow:    MCLPU-100 RTL Verification CI
+# Description: Automated continuous integration pipeline that installs Icarus
+#              Verilog, compiles the MCLPU-100 RTL processing element and
+#              self-checking testbench, executes functional verification, and
+#              archives the resulting VCD waveform artifact on every push/PR.
+# License:     Apache-2.0
+# =============================================================================
+
+name: RTL Verification CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  iverilog-verify:
+    name: Icarus Verilog Simulation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Icarus Verilog
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq iverilog
+
+      - name: Compile RTL and Testbench
+        run: |
+          iverilog -g2005 -Wall -o mclpu_sim.vvp rtl/mclpu_node.v rtl/tb_mclpu_node.v
+
+      - name: Execute Functional Verification
+        run: |
+          vvp mclpu_sim.vvp | tee simulation.log
+          if grep -q "SIMULATION FAILED" simulation.log; then
+            echo "Error: RTL verification testbench reported failures."
+            exit 1
+          fi
+          grep -q "SIMULATION PASSED" simulation.log
+
+      - name: Upload VCD Waveform Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mclpu-node-waveforms
+          path: |
+            tb_mclpu_node.vcd
+            simulation.log
+          retention-days: 14
