@@ -1,0 +1,28 @@
+# ITMP-100: InterConnected Memory Processor Specification (v1.0)
+
+## 1. Architectural Philosophy
+The InterConnected Memory Processor (ITMP-100) resolves the classic Von Neumann bottleneck and memory wall by physically eliminating the separate memory bus. Rather than shuttling data across millimeters of 2D interconnects, ITMP integrates logic and storage into a unified 100-tier monolithic 3D solid-state block.
+
+## 2. 1-to-1 Transistor-to-Memory Coupling
+In standard architectures, arithmetic logic units (ALUs) read from register files that fetch from multi-level caches and distant DRAM. ITMP establishes direct vertical 1-to-1 coupling:
+
+- **1T-1M Node Structure:** Each computational node pairs a single 2D monolayer field-effect transistor directly with a non-volatile memory cell (FeFET / ReRAM).
+- **Inter-Layer Vias (ILVs):** Sub-15 nm Ruthenium (Ru) / Carbon Nanotube vertical vias link the drain of each logic gate directly to the storage cell immediately above or below it.
+- **Latency & Energy:** Transit distance drops from centimeters to nanometers, reducing memory access latency to sub-femtoseconds and cutting data movement energy down to attojoules ($10^{-18}\text{ J}$) per bit.
+
+## 3. Physical Tier Layout
+The processor consists of 100 alternating vertical tiers grown sequentially via monolithic 3D fabrication:
+
+- **Even Tiers (002, 004, ..., 100):** Non-Volatile Memory arrays (FeFET / ReRAM) providing analog weight storage and instant non-volatile register state.
+- **Odd Tiers (001, 003, ..., 099):** Active 2D semiconductor logic nanosheets ($\text{MoS}_2$ / $\text{WS}_2$) forming high-speed switching gates.
+- **Inter-Tier Boundary:** 1–2 nm synthetic diamond dielectric sheets providing electrical isolation while acting as horizontal heat highways.
+- **Base Substrate (Tier 000):** Backside Power Delivery Network (BSPDN) supplying clean $V_{DD}$ and Ground rails from beneath the stack.
+
+## 4. Compute Model: Volumetric $(X, Y, Z)$ Matrix Processing
+Because transistors can route signals vertically as well as horizontally, ITMP operates as a volumetric spatial processor:
+
+- **Spatial Coordinate Mapping:** Memory addresses map directly to physical 3D space $(X, Y, Z)$.
+- **In-Memory Analog Compute:** Vector-matrix multiplications execute across the volume using Kirchhoff's Current Law:
+  $$\sum I = \sum (V_k \times G_k)$$
+  Where voltages ($V_k$) are applied across logic tiers and conductances ($G_k$) represent weights stored in memory tiers.
+- **Deterministic Latency:** Zero cache-miss penalties, zero branch stalls on spatial matrix workloads.
