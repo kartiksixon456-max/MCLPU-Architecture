@@ -1,83 +1,113 @@
 """
 MCLPU-100 (Multi Computer Large Processing Unit)
-Official Hardware Behavioral & Thermal Simulation v1.0
+Interactive & Dynamic Hardware Physics Simulator v2.0
 License: Apache 2.0
 """
 
 import random
+import time
 
 print("==========================================================")
-print("   MCLPU-100: 3D VOLUMETRIC PROCESSOR SIMULATOR (v1.0)    ")
+print("   MCLPU-100: LIVE INTERACTIVE HARDWARE SIMULATOR v2.0    ")
 print("==========================================================\n")
 
 # ---------------------------------------------------------
-# PART 1: 1T-1M In-Memory AI Matrix Math (Ohm's + Kirchhoff's Law)
+# TEST 1: Interactive 1T-1M In-Memory Matrix Engine
 # ---------------------------------------------------------
-print("[1] RUNNING IN-MEMORY ANALOG AI MATRIX CALCULATION...")
+print("[1] LIVE 1T-1M ANALOG MATRIX CALCULATOR")
+print("Enter 4 input voltages separated by spaces (e.g., 0.5 1.2 0.8 0.3)")
+user_in = input(" -> Or press ENTER to generate random live voltages: ").strip()
 
-# 8 input voltages (Volts) representing an AI prompt or sensor input
-input_voltages = [0.2, 0.5, 0.8, 0.1, 0.9, 0.4, 0.7, 0.3]
+if user_in:
+    # Uses the exact numbers YOU typed in!
+    voltages = [float(x) for x in user_in.split()[:4]]
+    while len(voltages) < 4:
+        voltages.append(0.5)
+else:
+    # Un-seeded! Brand new random voltages every single millisecond you run it
+    voltages = [round(random.uniform(0.1, 1.2), 2) for _ in range(4)]
 
-# 8x8 grid of 1T-1M memory cells on Tier 50 storing weights as Conductance (micro-Siemens)
-random.seed(100)
-memory_tier_weights = [[random.uniform(10.0, 90.0) for _ in range(8)] for _ in range(8)]
+# Generate a live 4x4 memory crossbar of conductance weights (in micro-Siemens)
+weights = [[round(random.uniform(10.0, 50.0), 1) for _ in range(4)] for _ in range(4)]
 
-# Instant hardware physics calculation: Current (I) = Voltage (V) * Conductance (G)
+print(f"\n -> Active Input Voltages (V) : {voltages}")
+print(" -> Memory Tier Conductance Grid (G in uS):")
+for row in weights:
+    print("    ", row)
+
+# REAL CALCULATION: Kirchhoff's Current Law (I = sum of V * G down each column)
+start_time = time.perf_counter_ns()
 output_currents = []
-for col in range(8):
-    column_sum = 0.0
-    for row in range(8):
-        # Ohm's Law at each transistor-memory node + Kirchhoff's summation down the vertical wire
-        column_sum += input_voltages[row] * memory_tier_weights[row][col]
-    output_currents.append(round(column_sum, 2))
+for col in range(4):
+    col_current = 0.0
+    for row in range(4):
+        col_current += voltages[row] * weights[row][col]
+    output_currents.append(round(col_current, 2))
+end_time = time.perf_counter_ns()
 
-print(f" -> Input Voltages (V) : {input_voltages}")
-print(f" -> Instant Output (uA): {output_currents}")
-print(" -> Status: Completed in 0 CPU clock cycles (Direct Analog Physics)\n")
-
-
-# ---------------------------------------------------------
-# PART 2: 3D Volumetric Spatial Grid (X, Y, Z Neighbor Sync)
-# ---------------------------------------------------------
-print("[2] SIMULATING 3D (X, Y, Z) VERTICAL VIA COMMUNICATION...")
-
-# Create a 3x3x3 mini-slice of the 100-tier chip (Z=3 tiers, Y=3 rows, X=3 cols)
-grid = [[[10.0 for _ in range(3)] for _ in range(3)] for _ in range(3)]
-grid[1][1][1] = 100.0  # Inject a high-energy signal right in the dead center of the 3D cube
-
-# The center node (1,1,1) talks to all 6 neighbors (Up, Down, Left, Right, Front, Back) at once
-neighbors_sum = (
-    grid[0][1][1] +  # Tier Below (Z - 1 via Vertical ILV)
-    grid[2][1][1] +  # Tier Above (Z + 1 via Vertical ILV)
-    grid[1][0][1] +  # North Gate (Y - 1)
-    grid[1][2][1] +  # South Gate (Y + 1)
-    grid[1][1][0] +  # West Gate  (X - 1)
-    grid[1][1][2]    # East Gate  (X + 1)
-)
-new_center_state = round((grid[1][1][1] + neighbors_sum) / 7.0, 2)
-
-print(f" -> Initial Center Node Energy : {grid[1][1][1]}")
-print(f" -> After 1-Cycle 3D Via Sync  : {new_center_state}")
-print(" -> Status: Zero memory-bus latency.\n")
+print(f"\n -> CALCULATED OUTPUT CURRENTS (uA): {output_currents}")
+print(f" -> Proof for Column 1: ({voltages[0]}*{weights[0][0]}) + ({voltages[1]}*{weights[1][0]}) + ({voltages[2]}*{weights[2][0]}) + ({voltages[3]}*{weights[3][0]}) = {output_currents[0]} uA")
+print(f" -> Host Simulation Time: {end_time - start_time} nanoseconds\n")
 
 
 # ---------------------------------------------------------
-# PART 3: Synthetic Diamond & Carbon Nanotube Thermal Engine
+# TEST 2: Live 3D (X, Y, Z) Heat & Signal Diffusion Loop
 # ---------------------------------------------------------
-print("[3] VERIFYING 100-TIER DIAMOND THERMAL DISSIPATION...")
+print("----------------------------------------------------------")
+print("[2] LIVE 3D VOLUMETRIC VIA SIGNAL PROPAGATION (5 CYCLES)")
 
-heat_flux_w_m2 = 10_000_000        # 1,000 W/cm^2 extreme 3D chip heat load
-stack_thickness_m = 0.000002       # 100 tiers = 2 micrometers thick (2e-6 m)
-diamond_conductivity = 2000.0      # CVD Synthetic Diamond (2,000 W/m*K)
-silicon_conductivity = 150.0       # Standard Silicon (150 W/m*K)
+# 3x3x3 Cube of 1T-1M nodes starting at 0.0
+cube = [[[0.0 for _ in range(3)] for _ in range(3)] for _ in range(3)]
 
-# Thermal equation: Temp Rise = (Heat Flux * Thickness) / Thermal Conductivity
-temp_rise_diamond = (heat_flux_w_m2 * stack_thickness_m) / diamond_conductivity
-temp_rise_silicon = (heat_flux_w_m2 * stack_thickness_m) / silicon_conductivity
+# Ask user how much energy to inject into the center of the 3D chip
+pulse_in = input(" -> Enter signal energy to inject at Center Node (e.g., 500): ").strip()
+pulse = float(pulse_in) if pulse_in else round(random.uniform(100.0, 1000.0), 1)
+cube[1][1][1] = pulse
 
-print(f" -> Standard Silicon Temp Rise : +{temp_rise_silicon:.4f} °C (Traps heat across layers)")
-print(f" -> MCLPU Diamond Temp Rise    : +{temp_rise_diamond:.4f} °C (Near-zero internal heat trap)")
-print(" -> Status: Thermal runaway prevented. Chip is stable.\n")
-print("==========================================================")
-print("   SIMULATION COMPLETE — MCLPU-100 ARCHITECTURE VERIFIED  ")
+print(f" -> Injected {pulse} units at Center (Z=1, Y=1, X=1). Watching it spread across tiers:")
+
+for cycle in range(1, 6):
+    # Calculate real 3D neighbor transfer across X, Y, Z vias
+    center = cube[1][1][1]
+    z_up   = cube[2][1][1]
+    z_down = cube[0][1][1]
+    
+    # Energy flows from center node into vertical & horizontal neighbors
+    transfer = center * 0.12
+    cube[1][1][1] -= transfer * 6
+    cube[2][1][1] += transfer  # Tier Above
+    cube[0][1][1] += transfer  # Tier Below
+    cube[1][2][1] += transfer  # North
+    cube[1][0][1] += transfer  # South
+    cube[1][1][2] += transfer  # East
+    cube[1][1][0] += transfer  # West
+    
+    print(f"    Cycle {cycle}: Center={cube[1][1][1]:.2f} | Tier Above (Z+1)={cube[2][1][1]:.2f} | Tier Below (Z-1)={cube[0][1][1]:.2f}")
+
+
+# ---------------------------------------------------------
+# TEST 3: Live Thermal Stress Test (Try to Melt the Chip!)
+# ---------------------------------------------------------
+print("\n----------------------------------------------------------")
+print("[3] DIAMOND COOLING STRESS TEST (TRY TO MELT THE CHIP)")
+power_in = input(" -> Enter Chip Power Load in Watts/cm^2 (e.g., 1000 or 25000): ").strip()
+power_w_cm2 = float(power_in) if power_in else random.randint(500, 5000)
+
+heat_flux_w_m2 = power_w_cm2 * 10000.0  # Convert W/cm^2 to W/m^2
+stack_thickness_m = 0.000002            # 100 tiers = 2 micrometers
+
+# Physics Formula: Delta_T = (Heat_Flux * Thickness) / Thermal_Conductivity
+silicon_rise = (heat_flux_w_m2 * stack_thickness_m) / 150.0   # Silicon = 150 W/mK
+diamond_rise = (heat_flux_w_m2 * stack_thickness_m) / 2000.0  # Diamond = 2000 W/mK
+
+base_ambient_temp = 35.0 # 35°C starting room/coolant temperature
+
+print(f"\n -> Testing at {power_w_cm2:,.1f} Watts/cm^2:")
+print(f" -> Standard Silicon Chip Internal Temp : {base_ambient_temp + silicon_rise:.3f} °C (+{silicon_rise:.4f} °C rise)")
+print(f" -> MCLPU Diamond Chip Internal Temp    : {base_ambient_temp + diamond_rise:.3f} °C (+{diamond_rise:.4f} °C rise)")
+
+if (base_ambient_temp + diamond_rise) > 105.0:
+    print(" -> [WARNING]: EXTREME OVERLOAD! Even Diamond reached thermal throttling (>105°C)!")
+else:
+    print(" -> [PASS]: Diamond interlayer kept the 100-tier stack cool and operational!")
 print("==========================================================")
